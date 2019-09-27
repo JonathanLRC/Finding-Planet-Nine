@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ObstacleDatabase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ObstacleInfo>
+    <Obstacle>
+      <id>1</id>
+      <texture>a.jpg</texture>
+      <resistance>10</resistance>
+      <type>Asteroid</type>
+    </Obstacle>
+  </ObstacleInfo>
+</ObstacleDatabase>

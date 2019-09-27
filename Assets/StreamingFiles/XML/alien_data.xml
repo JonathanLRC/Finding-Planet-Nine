@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<AlienDatabase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AlienInfo>
+    <Alien>
+      <id>1</id>
+      <texture>al.jpg</texture>
+      <resistance>100</resistance>
+    </Alien>
+  </AlienInfo>
+</AlienDatabase>

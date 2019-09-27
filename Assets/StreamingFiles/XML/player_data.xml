@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<PlayerData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <id>1</id>
+  <texture>texturap.jpg</texture>
+  <velocity>
+    <x>0</x>
+    <y>0</y>
+  </velocity>
+  <hp>10</hp>
+</PlayerData>

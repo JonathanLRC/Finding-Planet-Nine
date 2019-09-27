@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<SoundDatabase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SoundInfo>
+    <Sound>
+      <id>1</id>
+      <file>sonido1.ogg</file>
+      <volume>1</volume>
+      <duration>60</duration>
+    </Sound>
+  </SoundInfo>
+</SoundDatabase>

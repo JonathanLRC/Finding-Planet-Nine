@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<SpriteDatabase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SpriteInfo>
+    <Sprite>
+      <id>1</id>
+      <texture>textura1.jpg</texture>
+    </Sprite>
+  </SpriteInfo>
+</SpriteDatabase>

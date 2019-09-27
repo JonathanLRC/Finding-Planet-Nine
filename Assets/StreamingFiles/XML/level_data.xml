@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<LevelDatabase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LevelInfo>
+    <Level>
+      <number>1</number>
+      <difficulty>1</difficulty>
+      <duration>60</duration>
+      <Obstacles>
+        <ObstacleType>Asteroid</ObstacleType>
+      </Obstacles>
+    </Level>
+  </LevelInfo>
+</LevelDatabase>
