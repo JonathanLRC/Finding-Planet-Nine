@@ -3,11 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenuManager : MonoBehaviour
+public class MenuManager : MonoBehaviour
 {
-
     public void loadScene(string scene)
     {
         SceneManager.LoadScene(scene);
+    }
+
+    public void exitGame()
+    {
+        Application.Quit();
+        Debug.Log("Game is exiting");
     }
 }
