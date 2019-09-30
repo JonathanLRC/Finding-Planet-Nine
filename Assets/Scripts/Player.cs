@@ -14,7 +14,6 @@ public class Player : MonoBehaviour
     {
         upForce = 10000f;
         sideForce = 10000f;
-        Debug.Log("upForce = " + upForce);
         //anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
     }
