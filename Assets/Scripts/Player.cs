@@ -98,4 +98,9 @@ public class Player : MonoBehaviour
         //anim.SetTrigger("Die");
         GameControl.instance.PlayerDied();
     }
+
+    void OnBecameInvisible()
+    {
+        Die();
+    }
 }

@@ -49,9 +49,11 @@ public class GameControl : MonoBehaviour
 
     public void PlayerDied()
     {
+        Debug.Log("PlayerDied");
         //Activate the game over text.
-        gameOvertext.SetActive(true);
+        //gameOvertext.SetActive(true);
         //Set the game to be over.
+        SceneManager.LoadScene("LevelSelectionScreen");
         gameOver = true;
     }
 }
