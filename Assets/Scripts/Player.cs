@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
             }
             if (Input.GetKey("right"))
             {
-                //anim.SetTrigger("Up");
+                //anim.SetTrigger("Right");
                 float y = rb2d.velocity.y;
                 rb2d.velocity = Vector2.zero;
                 rb2d.AddForce(new Vector2(sideForce, y));
@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
             }
             if (Input.GetKey("left"))
             {
-                //anim.SetTrigger("Up");
+                //anim.SetTrigger("Left");
                 float y = rb2d.velocity.y;
                 rb2d.velocity = Vector2.zero;
                 rb2d.AddForce(new Vector2(-sideForce, y));
@@ -65,7 +65,7 @@ public class Player : MonoBehaviour
             }
             if (Input.GetKey("down"))
             {
-                //anim.SetTrigger("Up");
+                //anim.SetTrigger("Down");
                 float x = rb2d.velocity.x;
                 rb2d.velocity = Vector2.zero;
                 rb2d.AddForce(new Vector2(x, -upForce));

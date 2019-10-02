@@ -26,7 +26,6 @@ public class ObstacleMove : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            //Destroy(gameObject);
             other.gameObject.SendMessage("Die", SendMessageOptions.DontRequireReceiver);
         }
     }
