@@ -7,11 +7,13 @@ public class Player : MonoBehaviour
     public float sideForce;
     private bool isDead = false;
     int direction = 0;
+    int hp = 5;
     //private Animator anim;
     private Rigidbody2D rb2d;
 
     void Start()
     {
+        hp = 5;
         upForce = 10000f;
         sideForce = 10000f;
         //anim = GetComponent<Animator>();
@@ -79,9 +81,21 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
+        if (other.gameObject.tag == "Obstacle")
+        {
+            hp--;
+            if(hp <= 0)
+            {
+                Die();
+            }
+        }
+    }
+
+    void Die()
+    {
         rb2d.velocity = Vector2.zero;
         isDead = true;
         //anim.SetTrigger("Die");
-        GameControl.instance.BirdDied();
+        GameControl.instance.PlayerDied();
     }
 }

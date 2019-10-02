@@ -47,7 +47,7 @@ public class GameControl : MonoBehaviour
         scoreText.text = "Score: " + score.ToString();
     }
 
-    public void BirdDied()
+    public void PlayerDied()
     {
         //Activate the game over text.
         gameOvertext.SetActive(true);

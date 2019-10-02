@@ -4,6 +4,7 @@ using System.Collections;
 public class Laser : MonoBehaviour
 {
     Rigidbody2D rb;
+    public int damage;
     public float force;
 
     void Start()
@@ -17,5 +18,14 @@ public class Laser : MonoBehaviour
     void OnBecameInvisible()
     {
         Destroy(gameObject);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Obstacle")
+        {
+            other.gameObject.SendMessage("MakeDamage", damage, SendMessageOptions.DontRequireReceiver);
+            Destroy(gameObject);
+        }
     }
 }
