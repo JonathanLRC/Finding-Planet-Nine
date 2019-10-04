@@ -2,16 +2,17 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class ObstacleMove : MonoBehaviour
+public class ObstacleController : MonoBehaviour
 {
     public float speed;
     Rigidbody2D rb;
     public int resistance;
+    ObstacleType type;
 
     void Start()
     {
         speed = 100;
-        resistance = 5;
+        resistance = 3;
         rb = GetComponent<Rigidbody2D>();
         Vector3 move = new Vector3(-1, 0, 0);
         rb.velocity = move * speed;
@@ -30,11 +31,10 @@ public class ObstacleMove : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    void MakeDamage(int damage)
     {
-        Debug.Log("Proyectile triggers " + gameObject.tag);
-        resistance--;
-        if(resistance <= 0)
+        resistance = resistance - damage;
+        if (resistance <= 0)
         {
             Destroy(gameObject);
         }

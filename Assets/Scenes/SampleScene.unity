@@ -149,31 +149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 436fcaafe48c6c84881c3102ae06daf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameDB:
-    id: 0
-    status: 0
-    score: 0
-  levelDB:
-    list: []
-  screenDB:
-    list: []
-  soundDB:
-    list: []
-  spriteDB:
-    list: []
-  playerDB:
-    id: 0
-    texture: 
-    velocity: {x: 0, y: 0}
-    hp: 0
-  powerupDB:
-    list: []
-  obstacleDB:
-    list: []
-  proyectileDB:
-    list: []
-  alienDB:
-    list: []
 --- !u!4 &494683398
 Transform:
   m_ObjectHideFlags: 0
@@ -453,7 +428,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 494683397}
-        m_MethodName: LoadAllData
+        m_MethodName: UpdateAllData
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
