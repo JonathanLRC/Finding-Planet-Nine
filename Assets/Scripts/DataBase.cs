@@ -198,6 +198,132 @@ public class DataBase : MonoBehaviour
         XmlDataBase.alienDB = serializer.Deserialize(stream) as AlienDatabase;
         stream.Close();
     }
+    public void DeleteAllData()
+    {
+        DeleteGameData();
+        DeleteLevelData();
+        DeleteScreenData();
+        DeleteSoundData();
+        DeleteSpriteData();
+        DeletePlayerData();
+        DeletePowerUPData();
+        DeleteObstacleData();
+        DeleteProyectileData();
+        DeleteAlienData();
+    }
+    public void DeleteGameData()
+    {
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/game_data.xml");
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/game_data.xml.meta");
+    }
+    public void DeleteLevelData()
+    {
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/level_data.xml");
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/level_data.xml.meta");
+    }
+    public void DeleteScreenData()
+    {
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/screen_data.xml");
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/screen_data.xml.meta");
+    }
+    public void DeleteSoundData()
+    {
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/sound_data.xml");
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/sound_data.xml.meta");
+    }
+    public void DeleteSpriteData()
+    {
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/sprite_data.xml");
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/sprite_data.xml.meta");
+    }
+    public void DeletePlayerData()
+    {
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/player_data.xml");
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/player_data.xml.meta");
+    }
+    public void DeletePowerUPData()
+    {
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/powerup_data.xml");
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/powerup_data.xml.meta");
+    }
+    public void DeleteObstacleData()
+    {
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/obstacle_data.xml");
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/obstacle_data.xml.meta");
+    }
+    public void DeleteProyectileData()
+    {
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/proyectile_data.xml");
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/proyectile_data.xml.meta");
+    }
+    public void DeleteAlienData()
+    {
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/alien_data.xml");
+        File.Delete(Application.dataPath + "/StreamingFiles/XML/alien_data.xml.meta");
+    }
+    public void UpdateAllData()
+    {
+        UpdateGameData();
+        UpdateLevelData();
+        UpdateScreenData();
+        UpdateSoundData();
+        UpdateSpriteData();
+        UpdatePlayerData();
+        UpdatePowerUPData();
+        UpdateObstacleData();
+        UpdateProyectileData();
+        UpdateAlienData();
+    }
+    public void UpdateGameData()
+    {
+        DeleteGameData();
+        SaveGameData();
+    }
+    public void UpdateLevelData()
+    {
+        DeleteLevelData();
+        SaveLevelData();
+    }
+    public void UpdateScreenData()
+    {
+        DeleteScreenData();
+        SaveScreenData();
+    }
+    public void UpdateSoundData()
+    {
+        DeleteSoundData();
+        SaveSoundData();
+    }
+    public void UpdateSpriteData()
+    {
+        DeleteSpriteData();
+        SaveSpriteData();
+    }
+    public void UpdatePlayerData()
+    {
+        DeletePlayerData();
+        SavePlayerData();
+    }
+    public void UpdatePowerUPData()
+    {
+        DeletePowerUPData();
+        SavePowerUPData();
+    }
+    public void UpdateObstacleData()
+    {
+        DeleteObstacleData();
+        SaveObstacleData();
+    }
+    public void UpdateProyectileData()
+    {
+        DeleteProyectileData();
+        SaveProyectileData();
+    }
+    public void UpdateAlienData()
+    {
+        DeleteAlienData();
+        SaveAlienData();
+    }
 }
 
 [System.Serializable]
