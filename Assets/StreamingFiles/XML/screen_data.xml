@@ -5,5 +5,17 @@
       <id>1</id>
       <title>Inicio</title>
     </Screen>
+    <Screen>
+      <id>2</id>
+      <title>Selección de Nivel</title>
+    </Screen>
+    <Screen>
+      <id>3</id>
+      <title>Configuración</title>
+    </Screen>
+    <Screen>
+      <id>4</id>
+      <title>Créditos</title>
+    </Screen>
   </ScreenInfo>
 </ScreenDatabase>

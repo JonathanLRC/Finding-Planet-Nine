@@ -216,7 +216,6 @@ GameObject:
   - component: {fileID: 465842554}
   - component: {fileID: 465842555}
   - component: {fileID: 465842556}
-  - component: {fileID: 465842557}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -413,20 +412,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upForce: 0
   sideForce: 0
---- !u!114 &465842557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465842551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eec90a6d82d19f94ca4e0bfd13a2536d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   laser: {fileID: 2296887913795187785, guid: b93b7b3640305674b8878e615f3a965c, type: 3}
-  delayTime: 0
+  laserDelay: 0
 --- !u!1 &1469432772
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,10 +443,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe03580113d5a0f48bc9e129f1d53a32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
   gameOvertext: {fileID: 0}
   gameOver: 0
-  scrollSpeed: -1.5
 --- !u!4 &1469432774
 Transform:
   m_ObjectHideFlags: 0

@@ -1,17 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Laser : MonoBehaviour
+public class Projectile : MonoBehaviour
 {
     Rigidbody2D rb;
     public int damage;
-    public float force;
+    Vector2 velocity;
 
     void Start()
     {
-        force = 1000f;
+        velocity = new Vector2(1000f, 0);
         rb = GetComponent<Rigidbody2D>();
-        Vector3 directon = new Vector3(force, 0, 0);
+        Vector3 directon = new Vector3(velocity.x, velocity.y, 0);
         rb.AddForce(directon, ForceMode2D.Impulse);
     }
 
