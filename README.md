@@ -4,3 +4,8 @@ Finding Planet Nine is a video game developed in Unity, you will have fun contro
 
 Download link: http://findplan.herokuapp.com/
 
+![Alt text](ScreenShots/s1.png?raw=true "Title")
+
+![Alt text](ScreenShots/s2.png?raw=true "Title")
+
+![Alt text](ScreenShots/s3.png?raw=true "Title")
