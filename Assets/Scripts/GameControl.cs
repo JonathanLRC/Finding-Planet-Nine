@@ -2,14 +2,29 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class GameControl : MonoBehaviour
 {
     public static GameControl instance;
     public GameObject gameOvertext;
-
-    private int score = 0;
+    
     public bool gameOver = false;
+
+    private float delay = 1.1f;
+
+    private AudioSource audio2;
+
+    /// 
+
+
+    public event EventHandler GameOverEvent;
+
+    public void OnGameOver()
+    {
+        if (GameOverEvent != null)
+            GameOverEvent(this, EventArgs.Empty);
+    }
 
     void Awake()
     {
@@ -19,24 +34,85 @@ public class GameControl : MonoBehaviour
             Destroy(gameObject);
     }
 
-    void Update()
+    public bool IsWon
     {
+        get
+        {
+            if (gameOver.Equals(true))
+                return false;
 
+            return true;
+        }
     }
 
-    public void UpdateScore(int new_score)
+    public int status
     {
-        if(new_score > score)
+        get
         {
-            score = new_score;
+            return DataBase.ins.XmlDataBase.gameDB.status;
         }
+        set
+        {
+            DataBase.ins.XmlDataBase.gameDB.status = value;
+        }
+    }
+
+    public int score
+    {
+        get
+        {
+            return DataBase.ins.XmlDataBase.gameDB.score;
+        }
+        set
+        {
+            DataBase.ins.UpdateScore(value);
+        }
+    }
+
+    public void Save(int new_score)
+    {
+        DataBase.ins.UpdateScore(new_score);
     }
 
     public void PlayerDied()
     {
+        audio2 = GetComponent<AudioSource>();
+        audio2.volume = PlayerPrefs.GetFloat("SfxVolume", 0.75f);
         Debug.Log("PlayerDied");
         //gameOvertext.SetActive(true);
-        SceneManager.LoadScene("LevelSelectionScreen");
+        audio2.PlayOneShot(GetComponent<AudioSource>().clip);
+        
+        //StartCoroutine(DelayLoad());
+
         gameOver = true;
+        OnGameOver();
+
+    }
+
+    IEnumerator DelayLoad()
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene("LevelSelectionScreen");
+    }
+
+    public void PlayerDiedFinish()
+    {
+        audio2 = GetComponent<AudioSource>();
+        audio2.volume = PlayerPrefs.GetFloat("SfxVolume", 0.75f);
+        Debug.Log("PlayerDied");
+        //gameOvertext.SetActive(true);
+        audio2.PlayOneShot(GetComponent<AudioSource>().clip);
+
+        //StartCoroutine(DelayLoadFinish());
+
+        gameOver = true;
+        OnGameOver();
+
+    }
+
+    IEnumerator DelayLoadFinish()
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene("LevelSelectionScreen");
     }
 }

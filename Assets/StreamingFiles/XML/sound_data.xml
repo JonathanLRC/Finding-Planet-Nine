@@ -3,9 +3,33 @@
   <SoundInfo>
     <Sound>
       <id>1</id>
-      <file>sonido1.ogg</file>
+      <file>Laser_Shoot10.wav</file>
       <volume>1</volume>
       <duration>60</duration>
+    </Sound>
+    <Sound>
+      <id>2</id>
+      <file>U_Make_Me_Feel.mp3</file>
+      <volume>1</volume>
+      <duration>129</duration>
+    </Sound>
+    <Sound>
+      <id>3</id>
+      <file>Powerup.mp3</file>
+      <volume>1</volume>
+      <duration>285</duration>
+    </Sound>
+    <Sound>
+      <id>4</id>
+      <file>Level_Up.mp3</file>
+      <volume>1</volume>
+      <duration>219</duration>
+    </Sound>
+    <Sound>
+      <id>5</id>
+      <file>Inception.mp3</file>
+      <volume>1</volume>
+      <duration>162</duration>
     </Sound>
   </SoundInfo>
 </SoundDatabase>

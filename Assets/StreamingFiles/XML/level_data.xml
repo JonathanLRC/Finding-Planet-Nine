@@ -2,11 +2,107 @@
 <LevelDatabase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <LevelInfo>
     <Level>
+      <number>0</number>
+      <difficulty>20</difficulty>
+      <duration>2000000</duration>
+      <Obstacles>
+        <ObstacleType>Asteroid</ObstacleType>
+        <ObstacleType>SpaceTrash</ObstacleType>
+      </Obstacles>
+    </Level>
+    <Level>
       <number>1</number>
-      <difficulty>1</difficulty>
+      <difficulty>10</difficulty>
+      <duration>20</duration>
+      <Obstacles>
+        <ObstacleType>Asteroid</ObstacleType>
+      </Obstacles>
+    </Level>
+    <Level>
+      <number>2</number>
+      <difficulty>30</difficulty>
+      <duration>30</duration>
+      <Obstacles>
+        <ObstacleType>Asteroid</ObstacleType>
+        <ObstacleType>SpaceTrash</ObstacleType>
+      </Obstacles>
+    </Level>
+    <Level>
+      <number>3</number>
+      <difficulty>30</difficulty>
+      <duration>45</duration>
+      <Obstacles>
+        <ObstacleType>Asteroid</ObstacleType>
+        <ObstacleType>SpaceTrash</ObstacleType>
+        <ObstacleType>Star</ObstacleType>
+      </Obstacles>
+    </Level>
+    <Level>
+      <number>4</number>
+      <difficulty>20</difficulty>
       <duration>60</duration>
       <Obstacles>
         <ObstacleType>Asteroid</ObstacleType>
+        <ObstacleType>SpaceTrash</ObstacleType>
+        <ObstacleType>Star</ObstacleType>
+      </Obstacles>
+    </Level>
+    <Level>
+      <number>5</number>
+      <difficulty>25</difficulty>
+      <duration>60</duration>
+      <Obstacles>
+        <ObstacleType>Asteroid</ObstacleType>
+        <ObstacleType>SpaceTrash</ObstacleType>
+        <ObstacleType>Star</ObstacleType>
+        <ObstacleType>ExtraAlien</ObstacleType>
+      </Obstacles>
+    </Level>
+    <Level>
+      <number>6</number>
+      <difficulty>20</difficulty>
+      <duration>60</duration>
+      <Obstacles>
+        <ObstacleType>Asteroid</ObstacleType>
+        <ObstacleType>SpaceTrash</ObstacleType>
+        <ObstacleType>Star</ObstacleType>
+        <ObstacleType>ExtraAlien</ObstacleType>
+      </Obstacles>
+    </Level>
+    <Level>
+      <number>7</number>
+      <difficulty>25</difficulty>
+      <duration>80</duration>
+      <Obstacles>
+        <ObstacleType>Asteroid</ObstacleType>
+        <ObstacleType>SpaceTrash</ObstacleType>
+        <ObstacleType>Star</ObstacleType>
+        <ObstacleType>ExtraAlien</ObstacleType>
+        <ObstacleType>BlackHole</ObstacleType>
+      </Obstacles>
+    </Level>
+    <Level>
+      <number>8</number>
+      <difficulty>30</difficulty>
+      <duration>100</duration>
+      <Obstacles>
+        <ObstacleType>Asteroid</ObstacleType>
+        <ObstacleType>SpaceTrash</ObstacleType>
+        <ObstacleType>Star</ObstacleType>
+        <ObstacleType>ExtraAlien</ObstacleType>
+        <ObstacleType>BlackHole</ObstacleType>
+        <ObstacleType>ShootingStar</ObstacleType>
+      </Obstacles>
+    </Level>
+    <Level>
+      <number>9</number>
+      <difficulty>50</difficulty>
+      <duration>180</duration>
+      <Obstacles>
+        <ObstacleType>Asteroid</ObstacleType>
+        <ObstacleType>Alien</ObstacleType>
+        <ObstacleType>ExtraAlien</ObstacleType>
+        <ObstacleType>SpaceTrash</ObstacleType>
       </Obstacles>
     </Level>
   </LevelInfo>

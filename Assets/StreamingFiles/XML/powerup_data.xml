@@ -3,8 +3,39 @@
   <PowerUPInfo>
     <PowerUP>
       <id>1</id>
-      <texture>tp.jpg</texture>
+      <texture>StrengthSprite</texture>
+      <dimensions>
+        <heigh>300</heigh>
+        <width>300</width>
+      </dimensions>
+      <effect>Strength</effect>
+    </PowerUP>
+    <PowerUP>
+      <id>2</id>
+      <texture>SpeedSprite</texture>
+      <dimensions>
+        <heigh>300</heigh>
+        <width>300</width>
+      </dimensions>
       <effect>Speed</effect>
+    </PowerUP>
+    <PowerUP>
+      <id>3</id>
+      <texture>ImmunitySprite</texture>
+      <dimensions>
+        <heigh>400</heigh>
+        <width>400</width>
+      </dimensions>
+      <effect>Immunity</effect>
+    </PowerUP>
+    <PowerUP>
+      <id>4</id>
+      <texture>TripleShootSprite</texture>
+      <dimensions>
+        <heigh>340</heigh>
+        <width>340</width>
+      </dimensions>
+      <effect>TripleShoot</effect>
     </PowerUP>
   </PowerUPInfo>
 </PowerUPDatabase>

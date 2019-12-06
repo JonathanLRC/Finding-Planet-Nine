@@ -7,16 +7,25 @@ using UnityEngine.UI;
 public class SetVolume : MonoBehaviour
 {
     public AudioMixer mixer;
-    public Slider slider;
-
+    public Slider musicSlider;
+    public Slider sfxSlider;
     private void Start()
     {
-        slider.value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
+        musicSlider.value = PlayerPrefs.GetFloat("MusicVolume", 0.75f);
+        sfxSlider.value = PlayerPrefs.GetFloat("SfxVolume", 0.75f);
     }
-    public void SetLevel ()
+    public void SetMusicLevel ()
     {
-        float sliderValue = slider.value;
+        float sliderValue = musicSlider.value;
         mixer.SetFloat("MusicVol", Mathf.Log10(sliderValue)*20);
         PlayerPrefs.SetFloat("MusicVolume", sliderValue);
     }
+
+    public void SetSfxLevel()
+    {
+        float sliderValue = sfxSlider.value;
+        mixer.SetFloat("SfxVol", Mathf.Log10(sliderValue) * 20);
+        PlayerPrefs.SetFloat("SfxVolume", sliderValue);
+    }
+
 }

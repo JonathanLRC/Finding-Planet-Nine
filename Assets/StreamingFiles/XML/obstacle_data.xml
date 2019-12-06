@@ -1,11 +1,65 @@
 <?xml version="1.0"?>
-<ObstacleDatabase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ObstacleDatabase xmlns:xsd="http://www.w3.org/50001/XMLSchema" xmlns:xsi="http://www.w3.org/50001/XMLSchema-instance">
   <ObstacleInfo>
     <Obstacle>
       <id>1</id>
-      <texture>a.jpg</texture>
+      <texture>AsteroidSprite</texture>
+      <dimensions>
+        <heigh>500</heigh>
+        <width>500</width>
+      </dimensions>
       <resistance>10</resistance>
       <type>Asteroid</type>
+    </Obstacle>
+    <Obstacle>
+      <id>2</id>
+      <texture>SpaceTrashSprite</texture>
+      <dimensions>
+        <heigh>300</heigh>
+        <width>300</width>
+      </dimensions>
+      <resistance>10</resistance>
+      <type>SpaceTrash</type>
+    </Obstacle>
+    <Obstacle>
+      <id>3</id>
+      <texture>StarSprite</texture>
+      <dimensions>
+        <heigh>500</heigh>
+        <width>500</width>
+      </dimensions>
+      <resistance>10</resistance>
+      <type>Star</type>
+    </Obstacle>
+    <Obstacle>
+      <id>4</id>
+      <texture>ExtraAlienSprite</texture>
+      <dimensions>
+        <heigh>450</heigh>
+        <width>450</width>
+      </dimensions>
+      <resistance>10</resistance>
+      <type>ExtraAlien</type>
+    </Obstacle>
+    <Obstacle>
+      <id>5</id>
+      <texture>BlackHoleSprite</texture>
+      <dimensions>
+        <heigh>500</heigh>
+        <width>500</width>
+      </dimensions>
+      <resistance>10</resistance>
+      <type>BlackHole</type>
+    </Obstacle>
+    <Obstacle>
+      <id>6</id>
+      <texture>ShootingStarSprite</texture>
+      <dimensions>
+        <heigh>500</heigh>
+        <width>500</width>
+      </dimensions>
+      <resistance>10</resistance>
+      <type>ShootingStar</type>
     </Obstacle>
   </ObstacleInfo>
 </ObstacleDatabase>

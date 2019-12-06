@@ -3,7 +3,11 @@
   <AlienInfo>
     <Alien>
       <id>1</id>
-      <texture>al.jpg</texture>
+      <texture>Alien</texture>
+      <dimensions>
+        <heigh>500</heigh>
+        <width>500</width>
+      </dimensions>
       <resistance>100</resistance>
     </Alien>
   </AlienInfo>

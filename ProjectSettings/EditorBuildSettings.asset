@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayingScene.unity
     guid: a6ae1561a57a55646bf30710fb2d0dfa
+  - enabled: 1
+    path: Assets/Scenes/Animation.unity
+    guid: 8d18e77ca6686674f94e4af914c62bb3
   m_configObjects: {}

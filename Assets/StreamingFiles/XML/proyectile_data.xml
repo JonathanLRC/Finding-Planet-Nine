@@ -3,10 +3,38 @@
   <ProyectileInfo>
     <Proyectile>
       <id>1</id>
-      <texture>p.jpg</texture>
+      <texture>ProjectileSprite</texture>
+      <dimensions>
+        <heigh>10</heigh>
+        <width>1500</width>
+      </dimensions>
       <velocity>
-        <x>0</x>
-        <y>10</y>
+        <x>1000</x>
+        <y>0</y>
+      </velocity>
+    </Proyectile>
+    <Proyectile>
+      <id>2</id>
+      <texture>ProjectileSprite</texture>
+      <dimensions>
+        <heigh>10</heigh>
+        <width>1000</width>
+      </dimensions>
+      <velocity>
+        <x>1000</x>
+        <y>1000</y>
+      </velocity>
+    </Proyectile>
+    <Proyectile>
+      <id>3</id>
+      <texture>ProjectileSprite</texture>
+      <dimensions>
+        <heigh>10</heigh>
+        <width>4000</width>
+      </dimensions>
+      <velocity>
+        <x>1000</x>
+        <y>1000</y>
       </velocity>
     </Proyectile>
   </ProyectileInfo>
