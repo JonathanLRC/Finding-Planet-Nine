@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Obstacle
+  - PlayerProyectile
+  - PowerUp
+  - BackgroundMusic
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -13,12 +18,12 @@ TagManager:
   - UI
   - 
   - 
+  - Projectiles
+  - PowerUPs
   - 
+  - Enemies
   - 
-  - 
-  - 
-  - 
-  - 
+  - Player
   - 
   - 
   - 
@@ -38,6 +43,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: logo
+    uniqueID: 1500511215
+    locked: 0
+  - name: Top
+    uniqueID: 1781642595
+    locked: 0
+  - name: BG
+    uniqueID: 1582415773
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ScreenDatabase xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ScreenInfo>
+    <Screen>
+      <id>1</id>
+      <title>Inicio</title>
+    </Screen>
+    <Screen>
+      <id>2</id>
+      <title>Selección de Nivel</title>
+    </Screen>
+    <Screen>
+      <id>3</id>
+      <title>Configuración</title>
+    </Screen>
+    <Screen>
+      <id>4</id>
+      <title>Créditos</title>
+    </Screen>
+  </ScreenInfo>
+</ScreenDatabase>
